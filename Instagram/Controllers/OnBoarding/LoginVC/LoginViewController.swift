@@ -97,6 +97,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .systemBackground
+        loginViewModel.delegate = self
         configureViewSetup()
         
     }
@@ -204,12 +205,26 @@ class LoginViewController: UIViewController {
         }
         
         let loginRequest = LoginRequest(email: email, password: password)
-        loginViewModel.loginUser(loginRequest: loginRequest)
-        
+        loginViewModel.loginUser(loginRequest: loginRequest) { [weak self] success in
+            
+            DispatchQueue.main.async {
+                if success {
+                    print("User Logged in successfully")
+                }
+                
+                else {
+                    let alertVC = UIAlertController(title:"Log In Error", message:"Error occured while login", preferredStyle: .alert)
+                    
+                    alertVC.addAction(UIAlertAction(title:"Dissmiss", style: .cancel, handler: nil))
+                    self?.present(alertVC, animated: true, completion: nil)
+                }
+            }
+        }
     }
     
     @objc func createAnAccountButtonTapped(){
-        print("CreateAccountTapped")
+        let vc = RegisterViewController()
+        present(vc, animated: false, completion: nil)
     }
     
     @objc func termsButtonTapped(){

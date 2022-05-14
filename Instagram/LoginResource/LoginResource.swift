@@ -6,12 +6,26 @@
 //
 
 import Foundation
+import FirebaseAuth
 
 struct LoginResource{
     
 
-    public func loginUser(loginRequest:LoginRequest){
+    func loginUser(loginRequest:LoginRequest, completion:@escaping((Bool) -> Void)){
         
-    }
+        guard let email = loginRequest.email , let password = loginRequest.password else {
+                return
+            }
+            Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+                
+                guard authResult != nil , error == nil else {
+                    completion(false)
+                    return
+                }
+                
+                completion(true)
+            }
+            
+        }
     
 }

@@ -9,8 +9,8 @@ import Foundation
 import UIKit
 
 
-extension LoginViewController:UITextFieldDelegate{
-    
+extension LoginViewController:UITextFieldDelegate , LoginViewModelProtocal{
+   
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         if textField == emailTextField {
@@ -22,5 +22,23 @@ extension LoginViewController:UITextFieldDelegate{
         
         return true
     }
+    
+    
+    func didReceiveResponse(loginResponse: LoginResponse?) {
+        
+        if loginResponse?.errorMessage == nil {
+            
+        }
+        else  if (loginResponse?.errorMessage != nil) {
+            
+            let alert = UIAlertController(title: Constants.ErrorAlertTitle, message: loginResponse?.errorMessage, preferredStyle: .alert)
+
+            alert.addAction(UIAlertAction(title: Constants.OkAlertTitle, style: .default, handler: nil))
+             self.present(alert, animated: true)
+        }
+        
+    }
+    
+    
     
 }
