@@ -16,10 +16,4 @@ class PublishPostViewController: UIViewController {
     }
     
 
-  
-
-    
-    
-    
-    
 }
