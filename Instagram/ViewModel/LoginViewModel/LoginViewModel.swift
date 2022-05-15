@@ -19,19 +19,22 @@ struct LoginViewModel {
     
     var delegate:LoginViewModelProtocal?
     
-    
     func loginUser(loginRequest:LoginRequest, completion:@escaping((Bool) -> Void)){
         
         let validationResult = LoginValidation().validate(loginRequest: loginRequest)
         
-        
         if validationResult.success {
-           
+            
             let loginResource = LoginResource()
             loginResource.loginUser(loginRequest: loginRequest) { success in
                 
                 if success {
-                    completion(success)
+                    // IF response succeed
+                    completion(true)
+                }
+                else {
+                    // If it fails
+                    completion(false)
                 }
                 
             }

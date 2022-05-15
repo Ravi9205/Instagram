@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9DF1F3A31F8F343B02DFB748 /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4F636AEC94C4717091A3BB /* Pods_Instagram.framework */; };
+		B36EE47F28311EDA003D8D80 /* RegisterViewController+TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36EE47E28311EDA003D8D80 /* RegisterViewController+TextFieldDelegate.swift */; };
+		B36EE4832831204E003D8D80 /* RegisterUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36EE4822831204E003D8D80 /* RegisterUserViewModel.swift */; };
+		B36EE486283120C4003D8D80 /* RegisterUserRquest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36EE485283120C4003D8D80 /* RegisterUserRquest.swift */; };
+		B36EE48928312149003D8D80 /* RegisterUserValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36EE48828312149003D8D80 /* RegisterUserValidation.swift */; };
+		B36EE48C283124F5003D8D80 /* RegisterUserResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36EE48B283124F5003D8D80 /* RegisterUserResource.swift */; };
 		B37C5B46282FD03B0099CCC3 /* URLCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37C5B45282FD03B0099CCC3 /* URLCollection.swift */; };
 		B37C5B48282FD4840099CCC3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37C5B47282FD4840099CCC3 /* LoginViewModel.swift */; };
 		B37C5B4B282FDF610099CCC3 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37C5B4A282FDF610099CCC3 /* LoginResponse.swift */; };
@@ -67,8 +72,13 @@
 
 /* Begin PBXFileReference section */
 		A93B88D8F6DB231BA2F805A6 /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
+		B36EE47E28311EDA003D8D80 /* RegisterViewController+TextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterViewController+TextFieldDelegate.swift"; sourceTree = "<group>"; };
+		B36EE4822831204E003D8D80 /* RegisterUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserViewModel.swift; sourceTree = "<group>"; };
+		B36EE485283120C4003D8D80 /* RegisterUserRquest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserRquest.swift; sourceTree = "<group>"; };
+		B36EE48828312149003D8D80 /* RegisterUserValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserValidation.swift; sourceTree = "<group>"; };
+		B36EE48B283124F5003D8D80 /* RegisterUserResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserResource.swift; sourceTree = "<group>"; };
 		B37C5B45282FD03B0099CCC3 /* URLCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLCollection.swift; sourceTree = "<group>"; };
-		B37C5B47282FD4840099CCC3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewModel.swift; path = Instagram/Constants/LoginViewModel.swift; sourceTree = SOURCE_ROOT; };
+		B37C5B47282FD4840099CCC3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewModel.swift; path = Instagram/ViewModel/LoginViewModel/LoginViewModel.swift; sourceTree = SOURCE_ROOT; };
 		B37C5B4A282FDF610099CCC3 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		B37C5B4D283020860099CCC3 /* Reachablity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachablity.swift; sourceTree = "<group>"; };
 		B38013B8282E4D3900E006D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -145,6 +155,54 @@
 				FA4F636AEC94C4717091A3BB /* Pods_Instagram.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B36EE47D28311E22003D8D80 /* RegisterViewController+TextFieldDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B36EE47E28311EDA003D8D80 /* RegisterViewController+TextFieldDelegate.swift */,
+			);
+			path = "RegisterViewController+TextFieldDelegate";
+			sourceTree = "<group>";
+		};
+		B36EE48028312006003D8D80 /* LoginViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B37C5B47282FD4840099CCC3 /* LoginViewModel.swift */,
+			);
+			path = LoginViewModel;
+			sourceTree = "<group>";
+		};
+		B36EE48128312017003D8D80 /* RegisterUserViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B36EE4822831204E003D8D80 /* RegisterUserViewModel.swift */,
+			);
+			path = RegisterUserViewModel;
+			sourceTree = "<group>";
+		};
+		B36EE484283120A3003D8D80 /* RegisterUserRequest */ = {
+			isa = PBXGroup;
+			children = (
+				B36EE485283120C4003D8D80 /* RegisterUserRquest.swift */,
+			);
+			path = RegisterUserRequest;
+			sourceTree = "<group>";
+		};
+		B36EE48728312124003D8D80 /* RegisterUserValidation */ = {
+			isa = PBXGroup;
+			children = (
+				B36EE48828312149003D8D80 /* RegisterUserValidation.swift */,
+			);
+			path = RegisterUserValidation;
+			sourceTree = "<group>";
+		};
+		B36EE48A283124D1003D8D80 /* RegisterUserResource */ = {
+			isa = PBXGroup;
+			children = (
+				B36EE48B283124F5003D8D80 /* RegisterUserResource.swift */,
+			);
+			path = RegisterUserResource;
 			sourceTree = "<group>";
 		};
 		B37C5B49282FDF480099CCC3 /* LoginResponse */ = {
@@ -248,7 +306,8 @@
 		B38013D9282EC9B700E006D3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				B37C5B47282FD4840099CCC3 /* LoginViewModel.swift */,
+				B36EE48128312017003D8D80 /* RegisterUserViewModel */,
+				B36EE48028312006003D8D80 /* LoginViewModel */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -278,6 +337,9 @@
 		B3825CE6282BC0CF002496DE /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				B36EE48A283124D1003D8D80 /* RegisterUserResource */,
+				B36EE48728312124003D8D80 /* RegisterUserValidation */,
+				B36EE484283120A3003D8D80 /* RegisterUserRequest */,
 				B37C5B4C283020620099CCC3 /* Reachablity */,
 				B37C5B49282FDF480099CCC3 /* LoginResponse */,
 				B38013D9282EC9B700E006D3 /* ViewModel */,
@@ -448,6 +510,7 @@
 		B3825D31282BC511002496DE /* RegisterVC */ = {
 			isa = PBXGroup;
 			children = (
+				B36EE47D28311E22003D8D80 /* RegisterViewController+TextFieldDelegate */,
 				B3825D32282BC525002496DE /* RegisterViewController.swift */,
 			);
 			path = RegisterVC;
@@ -702,13 +765,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B36EE4832831204E003D8D80 /* RegisterUserViewModel.swift in Sources */,
 				B3825D39282BC5C9002496DE /* EditProfileViewController.swift in Sources */,
 				B3825D23282BC252002496DE /* ExploreViewController.swift in Sources */,
 				B3825D4B282BC760002496DE /* PublishPostViewController.swift in Sources */,
 				B3825D26282BC2BB002496DE /* CameraViewController.swift in Sources */,
+				B36EE486283120C4003D8D80 /* RegisterUserRquest.swift in Sources */,
 				B3825D29282BC2F5002496DE /* NotificationViewController.swift in Sources */,
 				B3825CE8282BC0CF002496DE /* AppDelegate.swift in Sources */,
 				B3825D48282BC728002496DE /* PostEditorViewController.swift in Sources */,
+				B36EE48C283124F5003D8D80 /* RegisterUserResource.swift in Sources */,
 				B38013D5282E6E7500E006D3 /* Constants.swift in Sources */,
 				B38013C2282E532B00E006D3 /* StorageManager.swift in Sources */,
 				B3825D36282BC58C002496DE /* PostViewController.swift in Sources */,
@@ -719,6 +785,7 @@
 				B38013CF282E5F5E00E006D3 /* ValidationResult.swift in Sources */,
 				B37C5B4B282FDF610099CCC3 /* LoginResponse.swift in Sources */,
 				B3825D2C282BC319002496DE /* ProfileViewController.swift in Sources */,
+				B36EE48928312149003D8D80 /* RegisterUserValidation.swift in Sources */,
 				B37C5B46282FD03B0099CCC3 /* URLCollection.swift in Sources */,
 				B38013C5282E549F00E006D3 /* LoginRequest.swift in Sources */,
 				B3825D42282BC683002496DE /* SearchViewController.swift in Sources */,
@@ -730,6 +797,7 @@
 				B3825D45282BC6C9002496DE /* SearchRelatedViewController.swift in Sources */,
 				B38013D2282E6B2100E006D3 /* Extensions.swift in Sources */,
 				B3825D1F282BC1D5002496DE /* HomeViewController.swift in Sources */,
+				B36EE47F28311EDA003D8D80 /* RegisterViewController+TextFieldDelegate.swift in Sources */,
 				B38013C8282E559400E006D3 /* LoginResource.swift in Sources */,
 				B3825D3F282BC650002496DE /* ListViewController.swift in Sources */,
 				B3825D3C282BC5FA002496DE /* SettingsViewController.swift in Sources */,

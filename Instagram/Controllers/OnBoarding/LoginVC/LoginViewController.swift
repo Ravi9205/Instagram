@@ -220,8 +220,7 @@ class LoginViewController: UIViewController {
                 }
             }
         }
-        
-        else {
+        else{
             let alertVC = UIAlertController(title:"No Internet", message:"Opps Please check your internet connection before you procced", preferredStyle: .alert)
             alertVC.addAction(UIAlertAction(title:"Dissmiss", style: .cancel, handler: nil))
             self.present(alertVC, animated: true, completion: nil)
@@ -233,10 +232,13 @@ class LoginViewController: UIViewController {
     //MARK:- Create New Account
     @objc func createAnAccountButtonTapped(){
         let vc = RegisterViewController()
-        present(vc, animated: false, completion: nil)
+        vc.title = "Create Account"
+        vc.modalPresentationStyle = .fullScreen
+        present(UINavigationController(rootViewController: vc), animated: false, completion: nil)
     }
     
     //MARK:- Terms of Use
+    
     @objc func termsButtonTapped(){
         
         guard let url = URL(string:URLCollection.termsCondtions) else {
@@ -256,6 +258,5 @@ class LoginViewController: UIViewController {
         }
         let vc = SFSafariViewController(url: url)
         present(vc, animated: true, completion: nil)
-        
     }
 }
