@@ -210,6 +210,7 @@ class LoginViewController: UIViewController {
                 DispatchQueue.main.async {
                     if success {
                         print("User Logged in successfully")
+                        self?.dismiss(animated: false, completion: nil)
                     }
                     
                     else {

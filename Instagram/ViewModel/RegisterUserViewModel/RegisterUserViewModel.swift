@@ -8,8 +8,16 @@
 import Foundation
 
 
+protocol RegisterUserViewModelProtocal:AnyObject {
+    
+    func didReceiveRegisterUserResponse(response:RegisterUserResponse)
+}
+
+
 struct RegisterUserViewModel
 {
+    
+    weak var delegates:RegisterUserViewModelProtocal?
     
     func register(regitserRequest:RegisterUserRequest,completion:@escaping(Bool)->Void){
         
@@ -30,6 +38,7 @@ struct RegisterUserViewModel
             }
             
         }
+        delegates?.didReceiveRegisterUserResponse(response: RegisterUserResponse(errorMessage: validation.error, data: nil))
         
     }
     

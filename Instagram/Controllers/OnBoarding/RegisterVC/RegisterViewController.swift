@@ -79,6 +79,7 @@ class RegisterViewController: UIViewController {
         
         UISetUp()
         view.backgroundColor = .systemBackground
+        registerUserViewModel.delegates = self
         
     }
     
@@ -97,10 +98,10 @@ class RegisterViewController: UIViewController {
                     if success {
                         print("Successfully register")
                         // DO SOME BASIC STUFF
+                        self?.dismiss(animated: true, completion: nil)
                     }
                     else {
                         let alert = UIAlertController(title:"Faild to register", message:"Error registering new user", preferredStyle: .alert)
-                        
                         let action = UIAlertAction(title:"Dissmiss", style: .cancel, handler: nil)
                         alert.addAction(action)
                         self?.present(alert, animated: true, completion: nil)
@@ -154,12 +155,13 @@ class RegisterViewController: UIViewController {
         emailTextField.delegate = self
         passwordTextField.delegate = self
         //MARK:- Target action
-
+        
         registerButton.addTarget(self, action: #selector(didTapRegister), for: .touchUpInside)
-
+        
         
     }
     
+    //MARK:- SignUp Button Action
     @objc  func  didTapRegister(){
         passwordTextField.resignFirstResponder()
         emailTextField.resignFirstResponder()
