@@ -8,9 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		9DF1F3A31F8F343B02DFB748 /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4F636AEC94C4717091A3BB /* Pods_Instagram.framework */; };
+		B36EE47F28311EDA003D8D80 /* RegisterViewController+TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36EE47E28311EDA003D8D80 /* RegisterViewController+TextFieldDelegate.swift */; };
+		B36EE4832831204E003D8D80 /* RegisterUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36EE4822831204E003D8D80 /* RegisterUserViewModel.swift */; };
+		B36EE486283120C4003D8D80 /* RegisterUserRquest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36EE485283120C4003D8D80 /* RegisterUserRquest.swift */; };
+		B36EE48928312149003D8D80 /* RegisterUserValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36EE48828312149003D8D80 /* RegisterUserValidation.swift */; };
+		B36EE48C283124F5003D8D80 /* RegisterUserResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36EE48B283124F5003D8D80 /* RegisterUserResource.swift */; };
 		B37C5B46282FD03B0099CCC3 /* URLCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37C5B45282FD03B0099CCC3 /* URLCollection.swift */; };
 		B37C5B48282FD4840099CCC3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37C5B47282FD4840099CCC3 /* LoginViewModel.swift */; };
 		B37C5B4B282FDF610099CCC3 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37C5B4A282FDF610099CCC3 /* LoginResponse.swift */; };
+		B37C5B4E283020860099CCC3 /* Reachablity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37C5B4D283020860099CCC3 /* Reachablity.swift */; };
 		B38013B9282E4D3A00E006D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B38013B8282E4D3900E006D3 /* GoogleService-Info.plist */; };
 		B38013BC282E513400E006D3 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38013BB282E513400E006D3 /* DatabaseManager.swift */; };
 		B38013BF282E52C400E006D3 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38013BE282E52C400E006D3 /* AuthManager.swift */; };
@@ -45,6 +51,8 @@
 		B3825D45282BC6C9002496DE /* SearchRelatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3825D44282BC6C9002496DE /* SearchRelatedViewController.swift */; };
 		B3825D48282BC728002496DE /* PostEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3825D47282BC728002496DE /* PostEditorViewController.swift */; };
 		B3825D4B282BC760002496DE /* PublishPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3825D4A282BC760002496DE /* PublishPostViewController.swift */; };
+		B3A16ECB28322E2A009DAB96 /* RegisterUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A16ECA28322E2A009DAB96 /* RegisterUserResponse.swift */; };
+		B3A16ECE28323825009DAB96 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A16ECD28323825009DAB96 /* ProfileCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,9 +74,15 @@
 
 /* Begin PBXFileReference section */
 		A93B88D8F6DB231BA2F805A6 /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
+		B36EE47E28311EDA003D8D80 /* RegisterViewController+TextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RegisterViewController+TextFieldDelegate.swift"; sourceTree = "<group>"; };
+		B36EE4822831204E003D8D80 /* RegisterUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserViewModel.swift; sourceTree = "<group>"; };
+		B36EE485283120C4003D8D80 /* RegisterUserRquest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserRquest.swift; sourceTree = "<group>"; };
+		B36EE48828312149003D8D80 /* RegisterUserValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserValidation.swift; sourceTree = "<group>"; };
+		B36EE48B283124F5003D8D80 /* RegisterUserResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserResource.swift; sourceTree = "<group>"; };
 		B37C5B45282FD03B0099CCC3 /* URLCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLCollection.swift; sourceTree = "<group>"; };
-		B37C5B47282FD4840099CCC3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewModel.swift; path = Instagram/Constants/LoginViewModel.swift; sourceTree = SOURCE_ROOT; };
+		B37C5B47282FD4840099CCC3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewModel.swift; path = Instagram/ViewModel/LoginViewModel/LoginViewModel.swift; sourceTree = SOURCE_ROOT; };
 		B37C5B4A282FDF610099CCC3 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		B37C5B4D283020860099CCC3 /* Reachablity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachablity.swift; sourceTree = "<group>"; };
 		B38013B8282E4D3900E006D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B38013BB282E513400E006D3 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		B38013BE282E52C400E006D3 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
@@ -107,6 +121,8 @@
 		B3825D44282BC6C9002496DE /* SearchRelatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRelatedViewController.swift; sourceTree = "<group>"; };
 		B3825D47282BC728002496DE /* PostEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditorViewController.swift; sourceTree = "<group>"; };
 		B3825D4A282BC760002496DE /* PublishPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishPostViewController.swift; sourceTree = "<group>"; };
+		B3A16ECA28322E2A009DAB96 /* RegisterUserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserResponse.swift; sourceTree = "<group>"; };
+		B3A16ECD28323825009DAB96 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		F6C53598A078128C9B4885AB /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
 		FA4F636AEC94C4717091A3BB /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -145,12 +161,68 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B36EE47D28311E22003D8D80 /* RegisterViewController+TextFieldDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B36EE47E28311EDA003D8D80 /* RegisterViewController+TextFieldDelegate.swift */,
+			);
+			path = "RegisterViewController+TextFieldDelegate";
+			sourceTree = "<group>";
+		};
+		B36EE48028312006003D8D80 /* LoginViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B37C5B47282FD4840099CCC3 /* LoginViewModel.swift */,
+			);
+			path = LoginViewModel;
+			sourceTree = "<group>";
+		};
+		B36EE48128312017003D8D80 /* RegisterUserViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B36EE4822831204E003D8D80 /* RegisterUserViewModel.swift */,
+			);
+			path = RegisterUserViewModel;
+			sourceTree = "<group>";
+		};
+		B36EE484283120A3003D8D80 /* RegisterUserRequest */ = {
+			isa = PBXGroup;
+			children = (
+				B36EE485283120C4003D8D80 /* RegisterUserRquest.swift */,
+			);
+			path = RegisterUserRequest;
+			sourceTree = "<group>";
+		};
+		B36EE48728312124003D8D80 /* RegisterUserValidation */ = {
+			isa = PBXGroup;
+			children = (
+				B36EE48828312149003D8D80 /* RegisterUserValidation.swift */,
+			);
+			path = RegisterUserValidation;
+			sourceTree = "<group>";
+		};
+		B36EE48A283124D1003D8D80 /* RegisterUserResource */ = {
+			isa = PBXGroup;
+			children = (
+				B36EE48B283124F5003D8D80 /* RegisterUserResource.swift */,
+			);
+			path = RegisterUserResource;
+			sourceTree = "<group>";
+		};
 		B37C5B49282FDF480099CCC3 /* LoginResponse */ = {
 			isa = PBXGroup;
 			children = (
 				B37C5B4A282FDF610099CCC3 /* LoginResponse.swift */,
 			);
 			path = LoginResponse;
+			sourceTree = "<group>";
+		};
+		B37C5B4C283020620099CCC3 /* Reachablity */ = {
+			isa = PBXGroup;
+			children = (
+				B37C5B4D283020860099CCC3 /* Reachablity.swift */,
+			);
+			path = Reachablity;
 			sourceTree = "<group>";
 		};
 		B38013BA282E511600E006D3 /* DatabaseManager */ = {
@@ -238,7 +310,8 @@
 		B38013D9282EC9B700E006D3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				B37C5B47282FD4840099CCC3 /* LoginViewModel.swift */,
+				B36EE48128312017003D8D80 /* RegisterUserViewModel */,
+				B36EE48028312006003D8D80 /* LoginViewModel */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -268,6 +341,11 @@
 		B3825CE6282BC0CF002496DE /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				B3A16EC928322DFA009DAB96 /* RegisterUserReponse */,
+				B36EE48A283124D1003D8D80 /* RegisterUserResource */,
+				B36EE48728312124003D8D80 /* RegisterUserValidation */,
+				B36EE484283120A3003D8D80 /* RegisterUserRequest */,
+				B37C5B4C283020620099CCC3 /* Reachablity */,
 				B37C5B49282FDF480099CCC3 /* LoginResponse */,
 				B38013D9282EC9B700E006D3 /* ViewModel */,
 				B38013D3282E6E6200E006D3 /* Constants */,
@@ -411,6 +489,7 @@
 		B3825D2A282BC308002496DE /* ProfileVC */ = {
 			isa = PBXGroup;
 			children = (
+				B3A16ECC28323805009DAB96 /* ProfileCell */,
 				B3825D2B282BC319002496DE /* ProfileViewController.swift */,
 			);
 			path = ProfileVC;
@@ -437,6 +516,7 @@
 		B3825D31282BC511002496DE /* RegisterVC */ = {
 			isa = PBXGroup;
 			children = (
+				B36EE47D28311E22003D8D80 /* RegisterViewController+TextFieldDelegate */,
 				B3825D32282BC525002496DE /* RegisterViewController.swift */,
 			);
 			path = RegisterVC;
@@ -504,6 +584,22 @@
 				B3825D4A282BC760002496DE /* PublishPostViewController.swift */,
 			);
 			path = PublishPostVC;
+			sourceTree = "<group>";
+		};
+		B3A16EC928322DFA009DAB96 /* RegisterUserReponse */ = {
+			isa = PBXGroup;
+			children = (
+				B3A16ECA28322E2A009DAB96 /* RegisterUserResponse.swift */,
+			);
+			path = RegisterUserReponse;
+			sourceTree = "<group>";
+		};
+		B3A16ECC28323805009DAB96 /* ProfileCell */ = {
+			isa = PBXGroup;
+			children = (
+				B3A16ECD28323825009DAB96 /* ProfileCell.swift */,
+			);
+			path = ProfileCell;
 			sourceTree = "<group>";
 		};
 		CD12152A92477F46D8848F0D /* Pods */ = {
@@ -691,22 +787,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B36EE4832831204E003D8D80 /* RegisterUserViewModel.swift in Sources */,
 				B3825D39282BC5C9002496DE /* EditProfileViewController.swift in Sources */,
 				B3825D23282BC252002496DE /* ExploreViewController.swift in Sources */,
 				B3825D4B282BC760002496DE /* PublishPostViewController.swift in Sources */,
 				B3825D26282BC2BB002496DE /* CameraViewController.swift in Sources */,
+				B36EE486283120C4003D8D80 /* RegisterUserRquest.swift in Sources */,
+				B3A16ECB28322E2A009DAB96 /* RegisterUserResponse.swift in Sources */,
 				B3825D29282BC2F5002496DE /* NotificationViewController.swift in Sources */,
 				B3825CE8282BC0CF002496DE /* AppDelegate.swift in Sources */,
 				B3825D48282BC728002496DE /* PostEditorViewController.swift in Sources */,
+				B36EE48C283124F5003D8D80 /* RegisterUserResource.swift in Sources */,
 				B38013D5282E6E7500E006D3 /* Constants.swift in Sources */,
 				B38013C2282E532B00E006D3 /* StorageManager.swift in Sources */,
 				B3825D36282BC58C002496DE /* PostViewController.swift in Sources */,
+				B37C5B4E283020860099CCC3 /* Reachablity.swift in Sources */,
+				B3A16ECE28323825009DAB96 /* ProfileCell.swift in Sources */,
 				B38013BC282E513400E006D3 /* DatabaseManager.swift in Sources */,
 				B38013D8282E89E900E006D3 /* TextField+Delegate.swift in Sources */,
 				B3825D2F282BC4F9002496DE /* LoginViewController.swift in Sources */,
 				B38013CF282E5F5E00E006D3 /* ValidationResult.swift in Sources */,
 				B37C5B4B282FDF610099CCC3 /* LoginResponse.swift in Sources */,
 				B3825D2C282BC319002496DE /* ProfileViewController.swift in Sources */,
+				B36EE48928312149003D8D80 /* RegisterUserValidation.swift in Sources */,
 				B37C5B46282FD03B0099CCC3 /* URLCollection.swift in Sources */,
 				B38013C5282E549F00E006D3 /* LoginRequest.swift in Sources */,
 				B3825D42282BC683002496DE /* SearchViewController.swift in Sources */,
@@ -718,6 +821,7 @@
 				B3825D45282BC6C9002496DE /* SearchRelatedViewController.swift in Sources */,
 				B38013D2282E6B2100E006D3 /* Extensions.swift in Sources */,
 				B3825D1F282BC1D5002496DE /* HomeViewController.swift in Sources */,
+				B36EE47F28311EDA003D8D80 /* RegisterViewController+TextFieldDelegate.swift in Sources */,
 				B38013C8282E559400E006D3 /* LoginResource.swift in Sources */,
 				B3825D3F282BC650002496DE /* ListViewController.swift in Sources */,
 				B3825D3C282BC5FA002496DE /* SettingsViewController.swift in Sources */,

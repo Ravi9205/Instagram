@@ -147,8 +147,6 @@ class LoginViewController: UIViewController {
                                            width: view.width-20,
                                            height: 50)
         
-        
-        
         configureHeaderView()
         
     }
@@ -195,37 +193,52 @@ class LoginViewController: UIViewController {
         
     }
     
-    
+    //MARK:- Login Action
     @objc func loginButtonTapped(){
-        emailTextField.resignFirstResponder()
-        passwordTextField.resignFirstResponder()
         
-        guard let email = emailTextField.text, let password = passwordTextField.text  else {
-            return
-        }
-        
-        let loginRequest = LoginRequest(email: email, password: password)
-        loginViewModel.loginUser(loginRequest: loginRequest) { [weak self] success in
+        if Reachability.isConnectedToNetwork() {
+            emailTextField.resignFirstResponder()
+            passwordTextField.resignFirstResponder()
             
-            DispatchQueue.main.async {
-                if success {
-                    print("User Logged in successfully")
-                }
+            guard let email = emailTextField.text, let password = passwordTextField.text  else {
+                return
+            }
+            
+            let loginRequest = LoginRequest(email: email, password: password)
+            loginViewModel.loginUser(loginRequest: loginRequest) { [weak self] success in
                 
-                else {
-                    let alertVC = UIAlertController(title:"Log In Error", message:"Error occured while login", preferredStyle: .alert)
+                DispatchQueue.main.async {
+                    if success {
+                        print("User Logged in successfully")
+                        self?.dismiss(animated: false, completion: nil)
+                    }
                     
-                    alertVC.addAction(UIAlertAction(title:"Dissmiss", style: .cancel, handler: nil))
-                    self?.present(alertVC, animated: true, completion: nil)
+                    else {
+                        let alertVC = UIAlertController(title:"Log In Error", message:"Error occured while login", preferredStyle: .alert)
+                        alertVC.addAction(UIAlertAction(title:"Dissmiss", style: .cancel, handler: nil))
+                        self?.present(alertVC, animated: true, completion: nil)
+                    }
                 }
             }
         }
+        else{
+            let alertVC = UIAlertController(title:"No Internet", message:"Opps Please check your internet connection before you procced", preferredStyle: .alert)
+            alertVC.addAction(UIAlertAction(title:"Dissmiss", style: .cancel, handler: nil))
+            self.present(alertVC, animated: true, completion: nil)
+        }
+        
+        
     }
     
+    //MARK:- Create New Account
     @objc func createAnAccountButtonTapped(){
         let vc = RegisterViewController()
-        present(vc, animated: false, completion: nil)
+        vc.title = "Create Account"
+        vc.modalPresentationStyle = .fullScreen
+        present(UINavigationController(rootViewController: vc), animated: false, completion: nil)
     }
+    
+    //MARK:- Terms of Use
     
     @objc func termsButtonTapped(){
         
@@ -237,6 +250,8 @@ class LoginViewController: UIViewController {
         
     }
     
+    //MARK:- Privacy Policy
+    
     @objc func privacyPolicyTapped(){
         
         guard let url = URL(string:URLCollection.privacyPolicy) else {
@@ -244,6 +259,5 @@ class LoginViewController: UIViewController {
         }
         let vc = SFSafariViewController(url: url)
         present(vc, animated: true, completion: nil)
-        
     }
 }
