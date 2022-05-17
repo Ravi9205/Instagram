@@ -13,6 +13,7 @@
 		B36EE486283120C4003D8D80 /* RegisterUserRquest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36EE485283120C4003D8D80 /* RegisterUserRquest.swift */; };
 		B36EE48928312149003D8D80 /* RegisterUserValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36EE48828312149003D8D80 /* RegisterUserValidation.swift */; };
 		B36EE48C283124F5003D8D80 /* RegisterUserResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36EE48B283124F5003D8D80 /* RegisterUserResource.swift */; };
+		B37230612833B47F00669C8D /* SettingsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37230602833B47F00669C8D /* SettingsModels.swift */; };
 		B37C5B46282FD03B0099CCC3 /* URLCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37C5B45282FD03B0099CCC3 /* URLCollection.swift */; };
 		B37C5B48282FD4840099CCC3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37C5B47282FD4840099CCC3 /* LoginViewModel.swift */; };
 		B37C5B4B282FDF610099CCC3 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37C5B4A282FDF610099CCC3 /* LoginResponse.swift */; };
@@ -79,6 +80,7 @@
 		B36EE485283120C4003D8D80 /* RegisterUserRquest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserRquest.swift; sourceTree = "<group>"; };
 		B36EE48828312149003D8D80 /* RegisterUserValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserValidation.swift; sourceTree = "<group>"; };
 		B36EE48B283124F5003D8D80 /* RegisterUserResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserResource.swift; sourceTree = "<group>"; };
+		B37230602833B47F00669C8D /* SettingsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModels.swift; sourceTree = "<group>"; };
 		B37C5B45282FD03B0099CCC3 /* URLCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLCollection.swift; sourceTree = "<group>"; };
 		B37C5B47282FD4840099CCC3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewModel.swift; path = Instagram/ViewModel/LoginViewModel/LoginViewModel.swift; sourceTree = SOURCE_ROOT; };
 		B37C5B4A282FDF610099CCC3 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
@@ -207,6 +209,14 @@
 				B36EE48B283124F5003D8D80 /* RegisterUserResource.swift */,
 			);
 			path = RegisterUserResource;
+			sourceTree = "<group>";
+		};
+		B372305F2833B45F00669C8D /* SettingsModels */ = {
+			isa = PBXGroup;
+			children = (
+				B37230602833B47F00669C8D /* SettingsModels.swift */,
+			);
+			path = SettingsModels;
 			sourceTree = "<group>";
 		};
 		B37C5B49282FDF480099CCC3 /* LoginResponse */ = {
@@ -341,6 +351,7 @@
 		B3825CE6282BC0CF002496DE /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				B372305F2833B45F00669C8D /* SettingsModels */,
 				B3A16EC928322DFA009DAB96 /* RegisterUserReponse */,
 				B36EE48A283124D1003D8D80 /* RegisterUserResource */,
 				B36EE48728312124003D8D80 /* RegisterUserValidation */,
@@ -824,6 +835,7 @@
 				B36EE47F28311EDA003D8D80 /* RegisterViewController+TextFieldDelegate.swift in Sources */,
 				B38013C8282E559400E006D3 /* LoginResource.swift in Sources */,
 				B3825D3F282BC650002496DE /* ListViewController.swift in Sources */,
+				B37230612833B47F00669C8D /* SettingsModels.swift in Sources */,
 				B3825D3C282BC5FA002496DE /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
