@@ -15,7 +15,8 @@ struct Constants {
     static let OkAlertTitle = "Ok"
     static let CancelAlertTitle = "Cancel"
     static let logOutMessage = "Are You Sure wants to LogOut?"
-    static let logOut = "LogOut!"
+    static let logOut = "Log Out"
+    static let errorLogOut = "Error Logging Out"
 }
 
 
