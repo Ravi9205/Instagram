@@ -29,6 +29,7 @@
 		B38013D2282E6B2100E006D3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38013D1282E6B2100E006D3 /* Extensions.swift */; };
 		B38013D5282E6E7500E006D3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38013D4282E6E7500E006D3 /* Constants.swift */; };
 		B38013D8282E89E900E006D3 /* TextField+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38013D7282E89E900E006D3 /* TextField+Delegate.swift */; };
+		B38120482834C3A3005D3850 /* IGFeedPostTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38120472834C3A3005D3850 /* IGFeedPostTableCell.swift */; };
 		B3825CE8282BC0CF002496DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3825CE7282BC0CF002496DE /* AppDelegate.swift */; };
 		B3825CEA282BC0CF002496DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3825CE9282BC0CF002496DE /* SceneDelegate.swift */; };
 		B3825CEF282BC0CF002496DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3825CED282BC0CF002496DE /* Main.storyboard */; };
@@ -96,6 +97,7 @@
 		B38013D1282E6B2100E006D3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		B38013D4282E6E7500E006D3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B38013D7282E89E900E006D3 /* TextField+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField+Delegate.swift"; sourceTree = "<group>"; };
+		B38120472834C3A3005D3850 /* IGFeedPostTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostTableCell.swift; sourceTree = "<group>"; };
 		B3825CE4282BC0CF002496DE /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3825CE7282BC0CF002496DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3825CE9282BC0CF002496DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -326,6 +328,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		B38120462834C366005D3850 /* IGFeedPostTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				B38120472834C3A3005D3850 /* IGFeedPostTableCell.swift */,
+			);
+			path = IGFeedPostTableCell;
+			sourceTree = "<group>";
+		};
 		B3825CDB282BC0CF002496DE = {
 			isa = PBXGroup;
 			children = (
@@ -468,6 +478,7 @@
 		B3825D20282BC228002496DE /* HomeVC */ = {
 			isa = PBXGroup;
 			children = (
+				B38120462834C366005D3850 /* IGFeedPostTableCell */,
 				B3825D1E282BC1D5002496DE /* HomeViewController.swift */,
 			);
 			path = HomeVC;
@@ -812,6 +823,7 @@
 				B38013D5282E6E7500E006D3 /* Constants.swift in Sources */,
 				B38013C2282E532B00E006D3 /* StorageManager.swift in Sources */,
 				B3825D36282BC58C002496DE /* PostViewController.swift in Sources */,
+				B38120482834C3A3005D3850 /* IGFeedPostTableCell.swift in Sources */,
 				B37C5B4E283020860099CCC3 /* Reachablity.swift in Sources */,
 				B3A16ECE28323825009DAB96 /* ProfileCell.swift in Sources */,
 				B38013BC282E513400E006D3 /* DatabaseManager.swift in Sources */,
